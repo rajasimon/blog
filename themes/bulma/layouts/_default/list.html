@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds-tablet is-half-desktop">
+        {{ range .Pages }}
+          {{ if eq .Type "post"}}
+          <div class="column">
+            <a href="{{ .Permalink }}"><h2 class="title">{{ .Title }}</h2></a>
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

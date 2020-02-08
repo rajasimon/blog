@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ partial "hero" }}
+<section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-two-thirds-tablet is-half-desktop">
+        <a href="{{ .RelPermalink }}">
+          <h2 class="title">{{ .Title }}</h2>
+        </a>
+        <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
