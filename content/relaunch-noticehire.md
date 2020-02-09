@@ -1,7 +1,7 @@
 ---
 title: "Relaunch Noticehire"
 date: 2020-02-09T22:29:30+05:30
-draft: true
+draft: false
 ---
 
 I never thought I would write this one after my [first blog post](/first-blog-post), but hey, it's my second post, and I already feel like a written lot of blog posts in the past.
