@@ -6,7 +6,7 @@
         {{ range .Pages }}
           {{ if eq .Type "post"}}
           <div class="column">
-            <a href="{{ .Permalink }}"><h2 class="title">{{ .Title }}</h2></a>
+            <a href="{{ .Permalink }}"><h2 class="title has-text-black-bis">{{ .Title }}</h2></a>
           </div>
           {{ end }}
         {{ end }}
