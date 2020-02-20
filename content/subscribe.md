@@ -1,11 +1,16 @@
 ---
 kind: "page"
 ---
-# Welcome to Raja Simon Blog
 
-I'm a full time coder. Recently I started making lot of side projects so this
-blog posts all abou them. I wanted to make this consistant over the period of
-time. So please subscribe to this blog.
+# I write blog posts about code and life.
+
+---- These are the topic I write.
+
+* Side Projects
+* Python Web Application Development
+* Car travelling
+* Special Childran Care.
+
 
 ## Projects
 
