@@ -4,7 +4,7 @@
     <div class="columns is-mobile is-multiline is-centered">
       <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-quarters-widescreen">
         {{ range .Pages }}
-          {{ if eq .Type "post"}}
+          {{ if eq .Type "post" }}
           <div class="column">
             <a href="{{ .Permalink }}"><h2 class="title has-text-black-bis">{{ .Title }}</h2></a>
           </div>

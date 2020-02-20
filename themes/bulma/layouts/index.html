@@ -1,21 +1,22 @@
-
 {{ define "main" }}
-{{ partial "hero" }}
 <section class="section">
   <div class="container">
     <div class="columns is-mobile is-multiline is-centered">
       {{ range .Pages }}
-        <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-quarters-widescreen">
-          <a href="{{ .RelPermalink }}">
-            <h2 class="title has-text-link">
-            {{ .Title }}
-            </h2>
-          </a>
-          <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
-          <p>
-            {{ .Summary }}
-          </p>
-        </div>
+        {{ if eq .Params.Kind "page" }}
+        {{ else }}
+          <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-quarters-widescreen">
+            <a href="{{ .RelPermalink }}">
+              <h2 class="title has-text-link">
+              {{ .Title }}
+              </h2>
+            </a>
+            <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+            <p>
+              {{ .Summary }}
+            </p>
+          </div>
+        {{ end }}
       {{ end }}
     </div>
   </div>
