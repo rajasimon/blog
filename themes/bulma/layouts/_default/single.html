@@ -6,10 +6,7 @@
         <a href="{{ .RelPermalink }}">
           <h1 class="title">{{ .Title }}</h1>
         </a>
-        {{ if eq .Params.Kind "page" }}
-        {{ else }}
-          <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
-        {{ end }}
+        <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
         <div class="content">
           {{ .Content }}
         </div>
