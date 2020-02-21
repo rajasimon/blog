@@ -42,6 +42,9 @@
 
       gtag('config', 'UA-157573143-2');
     </script>
+    {{ if eq .Site.IsServer true}}
+      Yes
+    {{ end }}
   </head>
   <body>
     {{ partial "navbar" }}
