@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Primary Meta Tags -->
-    {{ if .IsPage }}
-      <meta name="title" content="{{ .Page.Title }} - Raja Simon">
-    {{ else }}
-      <meta name="title" content="Raja Simon — I write all things about Python web.">
-    {{ end }}
-    <meta name="description" content="Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.">
-
+    <meta name="title" content="{{ if .IsPage }}{{ .Page.Title }} - Raja Simon{{ else }}Raja Simon — I write all things about Python web.{{ end }}">
+    <meta name="description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rajasimon.io/">
-    <meta property="og:title" content="Raja Simon — I write blog posts about code and life">
-    <meta property="og:description" content="These are the topics I will write in my blog posts. Side Projects, Python Web Application Development, Car Travelling, Special Care">
-    <meta property="og:image" content="/images/rajasimon-social-cover.png">
+    <meta property="og:title" content="{{ if .IsPage }}{{ .Page.Title }}{{ else }}Raja Simon — I write all things about Python web{{ end }}">
+    <meta property="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
+    <meta property="og:image" content="/images/android-chrome-512x512.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://rajasimon.io/">
-    <meta property="twitter:title" content="Raja Simon — I write blog posts about code and life">
-    <meta property="twitter:description" content="These are the topics I will write in my blog posts. Side Projects, Python Web Application Development, Car Travelling, Special Care">
-    <meta property="twitter:image" content="/images/android-chrome-192x192.png?123456789">
+    <meta property="twitter:title" content="{{ if .IsPage }}{{ .Page.Title }}{{ else }}Raja Simon — I write all things about Python web{{ end }}">
+    <meta property="twitter:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
+    <meta property="twitter:image" content="/images/android-chrome-512x512.png">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
