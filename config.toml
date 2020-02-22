@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Raja Simon Blog"
+title = "Raja Simon"
 
 theme = "bulma"
 summaryLength = 40

@@ -3,11 +3,14 @@
   <div class="container">
     <div class="columns is-mobile is-centered">
       <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-quarters-widescreen">
-        <a href="{{ .RelPermalink }}">
-          <h1 class="title">{{ .Title }}</h1>
-        </a>
-        <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
-        <div class="content">
+        <a href="/" class="title is-size-5" style="color: #faa274;">Raja Simon</a>
+        <br><br>
+        <h1 class="title is-size-2" style="margin-bottom: 0px;">{{ .Title }}</h1>
+        <p class="is-size-6">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+        <br>
+        <!-- <a href="{{ .RelPermalink }}">
+        </a> -->
+        <div class="markdown-body">
           {{ .Content }}
         </div>
       </div>

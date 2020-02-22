@@ -5,9 +5,9 @@
       {{ range .Pages }}
         <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-quarters-widescreen">
           <a href="{{ .RelPermalink }}">
-            <h2 class="title">
+            <h1 class="title is-size-2">
             {{ .Title }}
-            </h2>
+            </h1>
           </a>
           <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
           <p>
