@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Raja Simon — I write blog posts about code and life">
-    <meta name="description" content="These are the topics I will write in my blog posts. Side Projects, Python Web Application Development, Car Travelling, Special Care">
+    {{ if .IsPage }}
+      <meta name="title" content="{{ .Page.Title }} - Raja Simon">
+    {{ else }}
+      <meta name="title" content="Raja Simon — I write all things about Python web.">
+    {{ end }}
+    <meta name="description" content="Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -27,11 +31,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/images/site.webmanifest">
 
-    <title>
-      {{ block "title" . }}
-        {{ .Site.Title }}
-      {{ end }}
-    </title>
+    <title>{{ .Page.Title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     {{ if eq .IsPage true }}
       <link rel="stylesheet" href="/css/markdown.css">
