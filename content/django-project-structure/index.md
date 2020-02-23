@@ -1,6 +1,6 @@
 ---
 title: "Django Project Structure Best Practices 2020"
-date: 2020-02-22T12:56:11+05:30
+date: 2020-02-23T12:56:11+05:30
 draft: false
 tags: [django]
 categories: [development]
