@@ -13,7 +13,7 @@ This guide is for starting the project from scratch. For an established project,
 ## Create a project
 Creating the project is accessible in Django; It's just the `startapp` command, and it will create a few files and folders in your project. Let's see what those are…
 
-    python manage.py startproject project
+    python manage.py startproject projdir
 
 Now the project tree will look like this. 
 
