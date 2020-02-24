@@ -1,16 +1,35 @@
 {{ define "main" }}
 <section class="section">
   <div class="container">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-fifths-widescreen is-three-quarters-fullhd">
+        <h1 class="title is-size-1"><a href="" style="color: black;">Raja Simon Blog</a></h1>
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="/images/profile-picture.jpeg" alt="Raja Simon Profile Picture">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="is-5">I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
     <div class="columns is-mobile is-multiline is-centered">
       {{ range .Pages }}
-        <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-quarters-widescreen">
+        <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-fifths-widescreen is-three-quarters-fullhd">
           <a href="{{ .RelPermalink }}">
-            <h1 class="title is-size-2">
+            <h1 class="title has-text-black-bis is-size-4-mobile is-size-4-tablet is-size-3-desktop is-size-3-widescreen is-size-2-fullhd">
             {{ .Title }}
             </h1>
           </a>
           <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
-          <p>
+          <p class="has-text-justified">
             {{ .Summary }}
           </p>
         </div>
