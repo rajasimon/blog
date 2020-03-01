@@ -10,8 +10,8 @@
             </h1>
           </a>
           <p>{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
-          <p class="has-text-justified">
-            {{ .Summary }}
+          <p class="subtitle has-text-justified">
+            {{ .Description }}
           </p>
         </div>
       {{ end }}

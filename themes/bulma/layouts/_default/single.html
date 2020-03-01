@@ -4,8 +4,10 @@
     <div class="columns is-mobile is-centered">
       <div class="column is-12-mobile is-10-tablet is-10-desktop is-8-widescreen is-6-fullhd">
         <h1 class="title" style="margin-bottom: 0px;">{{ .Title }}</h1>
-        <p class="is-size-6">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+        <p class="is-size-6">Published {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
         <br>
+        <div class="subtitle">{{ .Description }}</div>
+        <hr>
         <div class="content">
           {{ .Content }}
         </div>

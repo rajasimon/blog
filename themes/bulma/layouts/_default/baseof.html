@@ -28,9 +28,6 @@
 
     <title>{{ .Page.Title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    {{ if eq .IsPage true }}
-      <link rel="stylesheet" href="/css/markdown.css">
-    {{ end }}
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157573143-2"></script>
@@ -41,6 +38,11 @@
 
       gtag('config', 'UA-157573143-2');
     </script>
+    {{ if eq .Site.IsServer false }}
+      {{ if eq .IsHome false }}
+      <script data-ad-client="ca-pub-7474542029238984" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      {{ end }}
+    {{ end }}
   </head>
   <body>
     {{ partial "navbar" }}
