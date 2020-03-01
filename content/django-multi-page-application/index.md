@@ -1,7 +1,10 @@
 ---
 title: "How to create Django Multi-Page Application"
+description: "Way to create MPA application using Django and stimulus"
 date: 2020-02-22T12:56:11+05:30
 draft: false
+tags: [django, stimulus]
+categories: [development]
 ---
 
 
@@ -55,7 +58,7 @@ const remoteEndpoints= {
 ```
 
 You can create N number of endpoints defined or store it in the cloud and make it available on the runtime using the `initialize` call. When the page loads this controller will call the `initialise` function and that time you can load the default content.
- 
+
 ## Backend Setup
 
 Make the Stimulus serves from the Django template using the help of `stimulus.application.register`. Once you registered, you can use the Stimulus without node build. Let's make the navigation and the initial `base.html` serves from the Django template. And when someone clicks the navigation trigger the controller to execute the `loadPage` function.

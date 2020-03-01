@@ -1,5 +1,6 @@
 ---
 title: "How to run periodic background task using Django Channels"
+description: "Guide to run background task in Django project without celery."
 date: 2020-02-29T21:20:25+05:30
 draft: false
 tags: [django]
