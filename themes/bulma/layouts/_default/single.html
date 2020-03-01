@@ -2,11 +2,11 @@
 <section class="section">
   <div class="container">
     <div class="columns is-mobile is-centered">
-      <div class="column is-full-mobile is-four-fifths-tablet is-three-fifths-desktop is-three-fifths-widescreen is-three-quarters-fullhd">
-        <h1 class="title is-size-4-mobile is-size-4-tablet is-size-3-desktop is-size-3-widescreen is-size-2-fullhd" style="margin-bottom: 0px;">{{ .Title }}</h1>
+      <div class="column is-12-mobile is-10-tablet is-10-desktop is-8-widescreen is-6-fullhd">
+        <h1 class="title" style="margin-bottom: 0px;">{{ .Title }}</h1>
         <p class="is-size-6">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
         <br>
-        <div class="markdown-body">
+        <div class="content">
           {{ .Content }}
         </div>
         <hr>
