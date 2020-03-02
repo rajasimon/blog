@@ -45,7 +45,9 @@
     {{ end }}
   </head>
   <body>
+    {{ partial "navbar" }}
     {{ block "main" . }}{{ end }}
     {{ block "footer" . }}{{ end }}
+    {{ partial "footer" }}
   </body>
 </html>
