@@ -25,7 +25,11 @@
               </div>
               <div class="media-right">
                 <p class="has-text-black">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
-                <span class="tag is-primary is-medium is-pulled-right">Black</span>
+                <div class="tags is-pulled-right">
+                  {{ range .Params.tags }}
+                    <span class="tag is-primary is-medium">{{ . }}</span>
+                  {{ end }}
+                </div>
               </div>
             </article>
           </a>
