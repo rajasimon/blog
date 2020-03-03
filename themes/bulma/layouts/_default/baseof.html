@@ -38,11 +38,6 @@
 
       gtag('config', 'UA-157573143-2');
     </script>
-    {{ if eq .Site.IsServer false }}
-      {{ if eq .IsHome false }}
-      <script data-ad-client="ca-pub-7474542029238984" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      {{ end }}
-    {{ end }}
   </head>
   <body>
     {{ partial "navbar" }}
