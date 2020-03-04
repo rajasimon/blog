@@ -2,5 +2,5 @@ baseURL = "https://rajasimon.io/"
 languageCode = "en-us"
 title = "Raja Simon"
 
-theme = "bulma"
+theme = "hugo-bulma-blog-theme"
 summaryLength = 40
