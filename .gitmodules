@@ -1,0 +1,3 @@
+[submodule "themes/hugo-bulma"]
+	path = themes/hugo-bulma
+	url = https://github.com/rajasimon/hugo-bulma
