@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://rajasimon.io/auto-populates-database-fields/</loc>
+    <lastmod>2020-03-23T11:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/categories/</loc>
+    <lastmod>2020-03-23T11:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/categories/package/</loc>
+    <lastmod>2020-03-23T11:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/tags/python/</loc>
+    <lastmod>2020-03-23T11:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/</loc>
+    <lastmod>2020-03-23T11:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/tags/sql/</loc>
+    <lastmod>2020-03-23T11:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/tags/</loc>
+    <lastmod>2020-03-23T11:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/categories/development/</loc>
+    <lastmod>2020-02-29T21:20:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/tags/django/</loc>
+    <lastmod>2020-02-29T21:20:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/django-channels-background-task/</loc>
+    <lastmod>2020-02-29T21:20:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/django-project-structure/</loc>
+    <lastmod>2020-02-23T12:56:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/django-multi-page-application/</loc>
+    <lastmod>2020-02-22T12:56:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/tags/stimulus/</loc>
+    <lastmod>2020-02-22T12:56:11+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/categories/analytics/</loc>
+    <lastmod>2020-02-11T17:25:35+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/tags/google/</loc>
+    <lastmod>2020-02-11T17:25:35+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/stop-google-analytics/</loc>
+    <lastmod>2020-02-11T17:25:35+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rajasimon.io/first-blog-post/</loc>
+    <lastmod>2020-02-08T11:19:35+05:30</lastmod>
+  </url>
+  
+</urlset>

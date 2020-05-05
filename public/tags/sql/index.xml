@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sql on Raja Simon</title>
+    <link>https://rajasimon.io/tags/sql/</link>
+    <description>Recent content in sql on Raja Simon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2020 11:22:32 +0530</lastBuildDate>
+    
+	<atom:link href="https://rajasimon.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Auto Populate Database Fields</title>
+      <link>https://rajasimon.io/auto-populates-database-fields/</link>
+      <pubDate>Mon, 23 Mar 2020 11:22:32 +0530</pubDate>
+      
+      <guid>https://rajasimon.io/auto-populates-database-fields/</guid>
+      <description>Few years back I&amp;rsquo;ve created many open source projects and we have seen the successfull one beatserer in my previous blog although there is another repository lying in Github and I really really thought it was cool so here I&amp;rsquo;m telling you all about that hoping you will like it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stimulus on Raja Simon</title>
+    <link>https://rajasimon.io/tags/stimulus/</link>
+    <description>Recent content in stimulus on Raja Simon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Feb 2020 12:56:11 +0530</lastBuildDate>
+    
+	<atom:link href="https://rajasimon.io/tags/stimulus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to create Django Multi-Page Application</title>
+      <link>https://rajasimon.io/django-multi-page-application/</link>
+      <pubDate>Sat, 22 Feb 2020 12:56:11 +0530</pubDate>
+      
+      <guid>https://rajasimon.io/django-multi-page-application/</guid>
+      <description>We all know about single-page applications, but what is this multi-page application and how that is different from monolith architecture. And does we call serverless architecture a multi-page application?. In this post, we are going to see what it is and what are the benefit of using it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google on Raja Simon</title>
+    <link>https://rajasimon.io/tags/google/</link>
+    <description>Recent content in google on Raja Simon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Feb 2020 17:25:35 +0530</lastBuildDate>
+    
+	<atom:link href="https://rajasimon.io/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stop Google Analytics for development</title>
+      <link>https://rajasimon.io/stop-google-analytics/</link>
+      <pubDate>Tue, 11 Feb 2020 17:25:35 +0530</pubDate>
+      
+      <guid>https://rajasimon.io/stop-google-analytics/</guid>
+      <description>For every project that I’ve set up Google Analytics, I wish Google automatically detects when I’m in local development and completely turn off analytics. For some environment, you can’t exclude the local environment just by using IP and ISP. You just need some solid way to detect you’re in the local environment.</description>
+    </item>
+    
+  </channel>
+</rss>
