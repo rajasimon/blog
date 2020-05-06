@@ -4,3 +4,6 @@ title = "Raja Simon"
 
 theme = "hugo-bulma"
 summaryLength = 40
+
+[params]
+    twitter = "rajasimon"
