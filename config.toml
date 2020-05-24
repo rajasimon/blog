@@ -7,3 +7,7 @@ summaryLength = 40
 
 [params]
     twitter = "rajasimon"
+    django = "#0C4B33"
+    python = "#4B8BBE"
+    sql = "#044a64"
+    google = "#4285F4"

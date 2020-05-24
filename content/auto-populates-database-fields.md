@@ -3,7 +3,7 @@ title: "Auto Populate Database Fields"
 date: 2020-03-23T11:22:32+05:30
 draft: false
 description: "Easy way to create N number of records."
-tags: [python, sql]
+tags: [sql]
 categories: [package]
 ---
 
@@ -13,7 +13,7 @@ The idea was started when my manager wanted me to populate empty database with v
 
 ### Installation
 
-You can install this library from the Python PYPI index using below command. 
+You can install this library from the Python PYPI index using below command.
 
 ```
 pipenv install sqlg

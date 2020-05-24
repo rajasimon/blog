@@ -3,7 +3,7 @@ title: "How to create Django Multi-Page Application"
 description: "Way to create MPA application using Django and stimulus"
 date: 2020-02-22T12:56:11+05:30
 draft: false
-tags: [django, stimulus]
+tags: [django]
 categories: [development]
 ---
 
@@ -14,7 +14,7 @@ We all know about single-page applications, but what is this multi-page applicat
 
 ![spa](spa.png)
 
-Traditional single page applications will have unique frontend applications usually run in Netlify or another static site hosting. And one backend normally Django or Ruby on Rails for serving the frontend requests. It may also have multiple backend applications, but that all serves the API request to frontend application on demand. 
+Traditional single page applications will have unique frontend applications usually run in Netlify or another static site hosting. And one backend normally Django or Ruby on Rails for serving the frontend requests. It may also have multiple backend applications, but that all serves the API request to frontend application on demand.
 
 This comes with an internal lock system whenever you wanted to change something on the frontend. You need to replace code in both places, one from frontend and corresponding backend code. To avoid this behavior, we could rely on multi-page application architecture.
 
@@ -33,7 +33,7 @@ So now you know how to create a multi-page application in theory but to achieve 
 
 What is really going on here? We have HTML code and Javascript code. In the Javascript code, we have to define controller targets and function to execute the code. Based on the above example when someone clicks the “Greet” button entered text taken from the input and added into an output span.
 
-This looks great and works really like reactive framework. Well, it’s not two-way data binding and there is an action involved to trigger the controller to execute the function. To make this one step further let’s change the greet function to make the network call. 
+This looks great and works really like reactive framework. Well, it’s not two-way data binding and there is an action involved to trigger the controller to execute the function. To make this one step further let’s change the greet function to make the network call.
 
 ```
 loadPage(target) {
@@ -45,7 +45,7 @@ loadPage(target) {
 }
 ```
 
-I've created the `loadPage` function with fetch network call. This will call the remoteEndpoints with particular targets. My target all looks like this. 
+I've created the `loadPage` function with fetch network call. This will call the remoteEndpoints with particular targets. My target all looks like this.
 
 ```
 const remoteEndpoints= {
@@ -63,16 +63,16 @@ You can create N number of endpoints defined or store it in the cloud and make i
 
 Make the Stimulus serves from the Django template using the help of `stimulus.application.register`. Once you registered, you can use the Stimulus without node build. Let's make the navigation and the initial `base.html` serves from the Django template. And when someone clicks the navigation trigger the controller to execute the `loadPage` function.
 
-I've mentioned server side rendering in the beginning of the blog posts but this is not really a server side rendering. Instead, you just return the actual HTML content in the response  to display in the browser. 
+I've mentioned server side rendering in the beginning of the blog posts but this is not really a server side rendering. Instead, you just return the actual HTML content in the response  to display in the browser.
 
 ## Use case for multi-page architecture
 I've put together some of the use cases for using multi-page applications. Looks complex to implement but really it's really cool for large scale application.
 
 1. A reactive framework like interface.
 2. Have multiple framework outputs in a single application.
-3. Multiple teams can develop applications separately. 
+3. Multiple teams can develop applications separately.
 
 ## Conclusion
-We saw how MPA is different from SPA and you can check out all the code in this GitHub repo [django-multi-page-application](https://github.com/rajasimon/django-multi-page-application). 
+We saw how MPA is different from SPA and you can check out all the code in this GitHub repo [django-multi-page-application](https://github.com/rajasimon/django-multi-page-application).
 
-Feel free to reach out to me on [twitter](https://twitter.com/rajasimon) if you need any help 
+Feel free to reach out to me on [twitter](https://twitter.com/rajasimon) if you need any help
