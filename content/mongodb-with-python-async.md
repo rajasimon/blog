@@ -61,13 +61,13 @@ And then you have to connet with your application start and stop time.
 
 ```python
 async def get_database():
-		return db.client["test_db"]
+    return db.client["test_db"]
 
 async def database_connect():
-		return db.client = AsyncIOMotorClient(DATABASE_URL)
+    return db.client = AsyncIOMotorClient(DATABASE_URL)
 
 async def database_disconnect():
-		db.client.close()
+    db.client.close()
 ```
 
 And one last final piece is to hook this with ASGI startup and shutdown.
