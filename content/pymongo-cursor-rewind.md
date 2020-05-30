@@ -24,12 +24,13 @@ I wonder why the second for loop is not working. It took me awhile to realise th
 
 Like `read()` this operation is one time only. If we need the document again we need to fetch it again. 
 
-## So what’s the story about `rewind` ? 
+## So what’s the story about `rewind` ?
+
 This rewind help fetch the same collection of documents without you writing queries. 
 
 Here is the modified code that re-fetch the collection.
 
-```
+```python
 def process():
     process = db.test_collection.find({user_email: user_email})
     
@@ -39,4 +40,6 @@ def process():
     for each in process.rewind():
 		    call_second_operation(each)
 ```
+
+----
 
