@@ -1,6 +1,6 @@
 ---
 title: "Mongodb Motor Find"
-description: "Mongodb Motor Find"
+description: "Easy way to use find in Mongodb Motor library"
 date: 2020-05-30T22:57:25+05:30
 draft: false
 categories: [development]
@@ -11,9 +11,9 @@ MongoDB keep amaze me about performance. Everytime I tries to do some heavy oper
 
 Motor is very similar to PyMongo but for latest Python. So if you're using Python3.6 and chances are you will be using Aysnc, ASGI features. PyMongo is not support for keyword await and async operation. So MongoDB created this Motor package where you can perfor some async queries.
 
-### So what's the problem with Find? 
+### So what's the problem with Find?
 
-Find is very similar to PyMongo and it's not required await keyword. But to get the value from it you have to use async. 
+Find is very similar to PyMongo and it's not required await keyword. But to get the value from it you have to use async.
 
 I wanted to get all the task for the particular user using Motor in my Python Starlette ASGI framework application.
 
