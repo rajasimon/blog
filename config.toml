@@ -5,6 +5,8 @@ title = "Raja Simon"
 theme = "hugo-bulma"
 summaryLength = 40
 
+googleAnalytics = "UA-157573143-2"
+
 [params]
     twitter = "rajasimon"
     django = "#0C4B33"
