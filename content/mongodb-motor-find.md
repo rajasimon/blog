@@ -3,6 +3,7 @@ title: "Mongodb Motor Find"
 description: "Easy way to use find in Mongodb Motor library"
 date: 2020-05-30T22:57:25+05:30
 draft: false
+type: "posts"
 categories: [development]
 tags: [motor]
 ---

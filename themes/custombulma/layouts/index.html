@@ -11,7 +11,8 @@
 <section class="section">
   <div class="container">
     <div class="columns is-mobile is-multiline is-centered">
-      {{ range .Pages }}
+      {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+      {{ range $paginator.Pages }}
         <div class="column is-12-mobile is-10-tablet is-10-desktop is-10-widescreen is-8-fullhd">
           <a href="{{ .RelPermalink }}">
             <article class="media custom-media" style="cursor: pointer;">
@@ -40,6 +41,26 @@
             </article>
           </a>
         </div>
+      {{ end }}
+
+      {{ if gt $paginator.TotalPages 1 }}
+      <div class="column is-12-mobile is-10-tablet is-10-desktop is-10-widescreen is-8-fullhd">
+        <nav class="pagination" role="navigation" aria-label="pagination">
+          {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="pagination-previous" title="This is the first page">Previous</a>
+          {{ end }}
+          {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="pagination-next">Next page</a>
+          {{ end }}
+          <ul class="pagination-list">
+            {{ range $paginator.Pagers }}
+            <li>
+              <a href="{{ .URL }}" class="pagination-link {{ if eq . $paginator }}is-current{{ end }}" aria-label="Page 1" aria-current="page">{{ .PageNumber }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
       {{ end }}
     </div>
   </div>

@@ -3,6 +3,7 @@ title: "Django Project Structure Best Practices 2020"
 description: "Proper way to create folder structure for your Django Project."
 date: 2020-02-23T12:56:11+05:30
 draft: false
+type: "posts"
 tags: [django]
 categories: [development]
 ---

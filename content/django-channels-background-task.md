@@ -3,21 +3,22 @@ title: "How to run periodic background task using Django Channels"
 description: "Guide to run background task in Django project without celery."
 date: 2020-02-29T21:20:25+05:30
 draft: false
+type: "posts"
 tags: [django]
 categories: [development]
 ---
 
-This post explains how to run Django background task with Django Channels. I've created the `beatserver` python package for those who wanted to run background task inside the Django server without using external dependencies. Well, Channel itself another dependency but soon it will merge in to Django so I say now you need just Channels as the first dependecies. 
+This post explains how to run Django background task with Django Channels. I've created the `beatserver` python package for those who wanted to run background task inside the Django server without using external dependencies. Well, Channel itself another dependency but soon it will merge in to Django so I say now you need just Channels as the first dependecies.
 
 ## Installation
 
-Can be easily installed using python packaing index aka pypi. 
+Can be easily installed using python packaing index aka pypi.
 
 `pipenv install beatserver`
 
 ### Configuration
 
-Once you installed the package all you have to do is create beatconfig file in your root folder next to settings.py file. I will explain in short what is beatconfig file but before let's see some sample beatconfig file it is. 
+Once you installed the package all you have to do is create beatconfig file in your root folder next to settings.py file. I will explain in short what is beatconfig file but before let's see some sample beatconfig file it is.
 
 beatconfig.py
 
@@ -38,7 +39,7 @@ BEAT_SCHEDULE = {
             'type': 'test.print',
             'message': {'testing': 'two'},
             # Precisely at 3AM on Monday
-            'schedule': '0 3 * * 1' 
+            'schedule': '0 3 * * 1'
         },
     ]
 }
@@ -46,14 +47,14 @@ BEAT_SCHEDULE = {
 
 ### Explanation
 
-Let's write simple Consumer function. If you follow the Channels tutorial you may already knows about how to write view function for channels. Normally you will write channels function in `consumers.py` file and then  will write all the consumer urls in `routing.py` file. 
+Let's write simple Consumer function. If you follow the Channels tutorial you may already knows about how to write view function for channels. Normally you will write channels function in `consumers.py` file and then  will write all the consumer urls in `routing.py` file.
 
 ```python
 # Consumers
 class PrintConsumer(SyncConsumer):
     def test_print(self, message):
         print(message)
-        
+
 # Routers
 application = ProtocolTypeRouter({
     "channel": ChannelNameRouter({
@@ -66,14 +67,14 @@ After seeing the beatconfig and explanation code now you know about some degree 
 
 > if the function name is `test_print` then the type name will be `test.print`
 
-This is the naming conversion you need careful with and beatserver support both timedelta and cron like syntax so you can just write something like this in your beatconfig. 
+This is the naming conversion you need careful with and beatserver support both timedelta and cron like syntax so you can just write something like this in your beatconfig.
 
 * `'schedule': timedelta(seconds=5)`
 * `'schedule': '0 3 * * 1' `
 
 ### Running
 
-Right now you have to run beatserver in the separate process to run along with runserver. And this will pick all the beatconfig file and run those function in the time inerval. 
+Right now you have to run beatserver in the separate process to run along with runserver. And this will pick all the beatconfig file and run those function in the time inerval.
 
 ```
 python manage.py beatserver
@@ -83,7 +84,7 @@ python manage.py beatserver
 
 ### Conclusion
 
-We saw that you to create a consumer function and hook with routing urls and create the beatconfig file to trigger the particular view function in the timely manner. 
+We saw that you to create a consumer function and hook with routing urls and create the beatconfig file to trigger the particular view function in the timely manner.
 
 [Github Beatserver](https://github.com/rajasimon/beatserver)
 

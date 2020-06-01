@@ -3,6 +3,7 @@ title: "How to create Django Multi-Page Application"
 description: "Way to create MPA application using Django and stimulus"
 date: 2020-02-22T12:56:11+05:30
 draft: false
+type: "posts"
 tags: [django]
 categories: [development]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Stop Google Analytics for development"
+description: "Way to stop analytics in local environment."
 date: 2020-02-11T17:25:35+05:30
 draft: false
 tags: [google]

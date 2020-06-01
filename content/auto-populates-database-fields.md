@@ -3,6 +3,7 @@ title: "Auto Populate Database Fields"
 date: 2020-03-23T11:22:32+05:30
 draft: false
 description: "Easy way to create N number of records."
+type: "posts"
 tags: [sql]
 categories: [package]
 ---

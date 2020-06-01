@@ -3,6 +3,7 @@ title: "Python Convert Timestamp Datetime"
 description: "Python way to convert timestamp to datetime."
 date: 2020-05-06T17:59:15+05:30
 draft: false
+type: "posts"
 tags: ["python"]
 categories: ["development"]
 ---

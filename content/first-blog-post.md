@@ -5,6 +5,7 @@ date: 2020-02-08T11:19:35+05:30
 draft: false
 tags: [personal]
 categories: [personal]
+type: "posts"
 ---
 
 I'm starting this blog post to try Hugo static site generator and stumbled upon how incredible fast is this. Fast, meaning it's fast. So let's write a few more blog posts for a few days and figure out what sticks.
