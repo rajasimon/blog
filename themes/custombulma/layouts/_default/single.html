@@ -1,0 +1,54 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-12-mobile is-10-tablet is-10-desktop is-10-widescreen is-8-fullhd">
+        <h1 class="title" style="margin-bottom: 0px;">{{ .Title }}</h1>
+        <p class="is-size-6 has-text-grey-light">Published {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+        <br>
+        <div class="subtitle">{{ .Description }}</div>
+        <hr>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        <div class="columns is-mobile is-multiline">
+          {{ if .Prev }}
+            <div class="column is-full-mobile">
+              {{ with .Prev }}
+                <a href="{{ .Permalink }}">
+                  <div class="box">
+                    <article class="media">
+                      <div class="media-left">←</div>
+                      <div class="media-content">
+                        <h1 class="title is-size-5">{{ .Title | truncate 40 }}</h1>
+                        <div class="subtitle is-size-6">{{ .Description | truncate 40 }}</div>
+                      </div>
+                    </article>
+                  </div>
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
+          {{ if .Next }}
+            <div class="column is-full-mobile">
+              {{ with .Next }}
+                <a href="{{ .Permalink }}">
+                  <div class="box">
+                    <article class="media">
+                      <div class="media-content">
+                        <h1 class="title is-size-5">{{ .Title | truncate 40 }}</h1>
+                        <div class="subtitle is-size-6">{{ .Description | truncate 40 }}</div>
+                      </div>
+                      <div class="media-right">→</div>
+                    </article>
+                  </div>
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

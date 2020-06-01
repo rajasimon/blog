@@ -2,7 +2,7 @@ baseURL = "https://rajasimon.io/"
 languageCode = "en-us"
 title = "Raja Simon"
 
-theme = "hugo-bulma"
+theme = "custombulma"
 summaryLength = 40
 
 googleAnalytics = "UA-157573143-2"
