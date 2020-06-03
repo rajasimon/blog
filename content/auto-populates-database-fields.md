@@ -26,13 +26,4 @@ You can also generate the compile version it from the source. For details go to 
 
 To use the `sqlg` we need to create a JSON file. This JSON file contains all the columns and rows information. Once you created this JSON and you can feed in to sqlg.
 
-
-
 For more information about how to configure the sqlg you can find the information in [sql](https://rajasimon.github.io/sqlg/column-properties/)
-
-
-
-
-
-
-

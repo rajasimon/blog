@@ -80,13 +80,8 @@ Right now you have to run beatserver in the separate process to run along with r
 python manage.py beatserver
 ```
 
-
-
 ### Conclusion
 
 We saw that you to create a consumer function and hook with routing urls and create the beatconfig file to trigger the particular view function in the timely manner.
 
 [Github Beatserver](https://github.com/rajasimon/beatserver)
-
-
-
