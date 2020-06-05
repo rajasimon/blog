@@ -2,10 +2,14 @@ baseURL = "https://rajasimon.io/"
 languageCode = "en-us"
 title = "Raja Simon"
 
-theme = "custombulma"
 summaryLength = 40
 paginate = 5
 googleAnalytics = "UA-157573143-2"
+
+[author]
+  name = "Raja Simon"
+  homepage = "https://rajasimon.io"
+
 
 [params]
     twitter = "rajasimon"
