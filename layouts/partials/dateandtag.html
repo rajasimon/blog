@@ -14,6 +14,8 @@
       <span class="tag is-medium" style="background-color: {{ $.Site.Params.motor }}; color: #FFFFFF">{{ $tag }}</span>
     {{ else if eq $tag "javascript" }}
       <span class="tag is-medium" style="background-color: {{ $.Site.Params.javascript }}; color: #000000">{{ $tag }}</span>
+    {{ else if eq $tag "postgresql" }}
+      <span class="tag is-medium" style="background-color: {{ $.Site.Params.postgresql }}; color: #FFFFFF">{{ $tag }}</span>
     {{ else }}
       <span class="tag is-medium" style="background-color: #000000; color: #FFFFFF">{{ $tag }}</span>
     {{ end }}
