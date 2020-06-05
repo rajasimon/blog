@@ -8,7 +8,6 @@ tags: [django]
 categories: [development]
 ---
 
-
 We all know about single-page applications, but what is this multi-page application and how that is different from monolith architecture. And does we call serverless architecture a multi-page application?. In this post, we are going to see what it is and what are the benefit of using it. So without further due, let’s, deep dive.
 
 ## What we know about SPA
@@ -28,7 +27,6 @@ In other words, you may have multiple backend server running different differnt 
 ![mpg](/content/mpa.png)
 
 So now you know how to create a multi-page application in theory but to achieve that we should rely on one javascript framework which is called [stimulus js](http://stimulusjs.org/). This Stimulus is very easy to use and we can use that with normal Django application. Let’s looks into this simple Stimulus example and how we can use this to achieve our multi-page application.
-
 
 ![stimulas-example](/content/stimulus-example.png)
 
@@ -67,6 +65,7 @@ Make the Stimulus serves from the Django template using the help of `stimulus.ap
 I've mentioned server side rendering in the beginning of the blog posts but this is not really a server side rendering. Instead, you just return the actual HTML content in the response  to display in the browser.
 
 ## Use case for multi-page architecture
+
 I've put together some of the use cases for using multi-page applications. Looks complex to implement but really it's really cool for large scale application.
 
 1. A reactive framework like interface.
@@ -74,6 +73,7 @@ I've put together some of the use cases for using multi-page applications. Looks
 3. Multiple teams can develop applications separately.
 
 ## Conclusion
+
 We saw how MPA is different from SPA and you can check out all the code in this GitHub repo [django-multi-page-application](https://github.com/rajasimon/django-multi-page-application).
 
 Feel free to reach out to me on [twitter](https://twitter.com/rajasimon) if you need any help

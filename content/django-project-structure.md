@@ -13,6 +13,7 @@ In this blog post, I'm writing about how to create the best folder structure for
 This guide is for starting the project from scratch. For an established project, please keep this idea in mind and try to add these features one by one.
 
 ## Create a project
+
 Creating the project is accessible in Django; It's just the `startapp` command, and it will create a few files and folders in your project. Let's see what those are…
 
     python manage.py startproject projdir
@@ -29,7 +30,6 @@ Now the project tree will look like this.
     └── wsgi.py
 ```
 
-
 Now we've created the Django project, and now we have two options to proceed. One is to create the apps next to projdir or create an app inside the project folder and will continue developing from it.
 Two approach
 
@@ -39,6 +39,7 @@ Two approach
 I like the second approach because that will gives a clean look into the overall project. So let's create the apps for our project.
 
 ## Create apps
+
 For the second approach we need to create the folder by hand then run the `startapp` command this way you can avoid command error that cause by folder not present in the first place.
 
 ```
@@ -49,6 +50,7 @@ python manage.py startapp core projdir/core
 ```
 
 Now that we have created the folder structure lets see how the tree structure look like.
+
 ```
 ├── manage.py
 └── projdir
@@ -71,9 +73,11 @@ Now that we have created the folder structure lets see how the tree structure lo
 Apps created by the `startapp` command will have all the necessary files for the Django app. Now how do we point this to installed apps.
 
 ## Installed apps
+
 We must tell the Django that our newly created apps dotted path.  Then only Django will recognise our app as Django apps otherwise you can't run migrations and other benefits. Okay let's see how we can add dotted path in installed apps.
 
 There is two approach in there one is using the dotted path upto the apps directory or the AppConfig directory.
+
 1. Dotted path from root project folder to apps.
 2. Dotted path from root project folder to AppConfig.
 
@@ -83,7 +87,7 @@ But the second approach is bit different you need to change the apps.py file `na
 
 ```
 class App2Config(AppConfig):
-	name = "prouder.app2"
+    name = "prouder.app2"
 ```
 
 And in the installed app just mention the path upto AppConfig like this...
@@ -91,6 +95,7 @@ And in the installed app just mention the path upto AppConfig like this...
     projdir.app2.apps.App2Config
 
 ## Conclusion
+
 So far, we have seen how to create a folder structure in Django, both normally like and inside the root project folder to avoid the mess. You can find all the code in[github/django-project-structure](https://github.com/rajasimon/django-project-structure) repository.
 
 Let's discuss on [twitter](https://twitter.com/rajasimon) if you need any clarification. Please support me by subscribing to my newsletter below, and I will write more about Django application development in future posts.
