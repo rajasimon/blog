@@ -22,3 +22,6 @@ googleAnalytics = "UA-157573143-2"
     motor = "#8eadbf"
     javascript = "#ecdb54"
     postgresql = "#336690"
+
+[markup.goldmark.renderer]
+unsafe= true

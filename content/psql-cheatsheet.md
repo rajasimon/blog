@@ -8,7 +8,7 @@ categories: ["development"]
 tags: ["postgresql"]
 ---
 
-Listing general PostgreSQL commands here for my future self. 
+Listing general PostgreSQL commands here for my future self.
 
 ## Start
 
@@ -68,10 +68,13 @@ TO change the password please use this command.
 
 ## Connect
 
-To use the database we must connect with it. 
+To use the database we must connect with it.
 
 ```bash
 \connect webaccount
 ```
 
+I've also created the gist for quick glance incase if you want to check my
+original source.
 
+[psql cheatsheet](https://gist.github.com/rajasimon/4c6e2b7219d814991bc3?cardthispage=true)
