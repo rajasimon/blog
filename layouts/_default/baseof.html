@@ -45,6 +45,9 @@
 
     {{ if not .Site.IsServer }}
       {{ template "_internal/google_analytics_async.html" . }}
+      {{ if eq .Type "posts" }}
+        <script data-ad-client="ca-pub-7474542029238984" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      {{ end }}
     {{ end }}
   </head>
   <body>
