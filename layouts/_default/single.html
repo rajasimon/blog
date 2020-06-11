@@ -16,6 +16,18 @@
             <div class="content">
               {{ .Content }}
             </div>
+
+            <p>
+              This article published under
+              {{ range (.GetTerms "categories") }}
+               <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+              {{ end }}
+              on
+              {{ range (.GetTerms "tags") }}
+                <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+              {{ end }}
+              tags
+            </p>
             <hr>
             <div class="columns is-mobile is-multiline">
               {{ if .Prev }}
