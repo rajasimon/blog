@@ -2,7 +2,7 @@
 title: "How to find a Job in Pandemic"
 description: "Simple way to land a tech job in this pandemic world."
 date: 2020-06-14T15:53:06+05:30
-draft: true
+draft: false
 type: "posts"
 categories: [pandemic]
 tags: [job]
