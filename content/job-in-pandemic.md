@@ -4,8 +4,8 @@ description: "Simple way to land a tech job in this pandemic world."
 date: 2020-06-14T15:53:06+05:30
 draft: false
 type: "posts"
-categories: [pandemic]
-tags: [job]
+categories: ["pandemic"]
+tags: ["job"]
 ---
 
 ## How to find a Job in Pandemic?
