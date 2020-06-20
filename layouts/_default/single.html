@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ if eq .Type "about" }}
     {{ partial "about" . }}
-  {{ else if eq .Type "subscribe" }}
-    {{ partial "subscribe" .}}
+  {{ else if eq .Type "newsletter" }}
+    {{ partial "newsletter" .}}
   {{ else }}
     <section class="section">
       <div class="container">
