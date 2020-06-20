@@ -8,8 +8,6 @@ categories: ["pandemic"]
 tags: ["job"]
 ---
 
-## How to find a Job in Pandemic?
-
 Last year I resigned my senior position job. It was great but later I found that it's not align with my interests. I didn't have the job when I resigned. It's was not the right decision. And I can't find the job after 2 months. And then one day I got a call from one early stage company and then they offered me contract job.
 
 

@@ -29,6 +29,7 @@
     <title>{{ .Page.Title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,700;1,700&family=Merriweather:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
     <!-- Custom css -->
     <style>
       body {
@@ -40,6 +41,30 @@
 
       #wrapper {
         flex: 1;
+      }
+
+      body {
+        font-family: 'Merriweather', serif;
+        font-size: 1.20em;
+        line-height: 1.8;
+        color: #333;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fira Sans', sans-serif;
+      }
+      p a {
+        background: linear-gradient(to bottom,#b3e5fc 0%,#b3e5fc 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+        transition: background-size .4s;
+        padding: 3px;
+        border-radius: 4px;
+      }
+      p a:hover {
+        text-decoration: none;
+        color: #01579b;
+        background-size: 4px 50px;
       }
     </style>
 
