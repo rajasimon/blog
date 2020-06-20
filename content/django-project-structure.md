@@ -100,5 +100,3 @@ And in the installed app just mention the path upto AppConfig like this...
 So far, we have seen how to create a folder structure in Django, both normally like and inside the root project folder to avoid the mess.
 
 You can find all the code in[github/django-project-structure](https://github.com/rajasimon/django-project-structure) repository.
-
-Please support me by subscribing to my newsletter. By subscribing you get to read all my previous article in this category.

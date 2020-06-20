@@ -25,6 +25,4 @@ MIGRATION_MODULES = {
 }
 ```
 
-The above settings will stop the migration for those apps only and remaining your project apps will migrate automatically. 
-
-Please support me by subscribing to my newsletter. By subscribing you get to read all my previous article in this category.
+The above settings will stop the migration for those apps only and remaining your project apps will migrate automatically.
