@@ -32,38 +32,42 @@
             <hr>
             <div class="columns is-mobile is-multiline">
               {{ if .Prev }}
-                <div class="column is-full-mobile">
-                  {{ with .Prev }}
-                    <a href="{{ .Permalink }}">
-                      <div class="box is-shadowless">
-                        <article class="media">
-                          <div class="media-left">←</div>
-                          <div class="media-content">
-                            <h1 class="title is-size-5">{{ .Title | truncate 40 }}</h1>
-                            <div class="subtitle is-size-6">{{ .Description | truncate 40 }}</div>
-                          </div>
-                        </article>
-                      </div>
-                    </a>
-                  {{ end }}
-                </div>
+                {{ if and (ne .Prev.Type "about") (ne .Prev.Type "newsletter")  }}
+                  <div class="column is-full-mobile">
+                    {{ with .Prev }}
+                      <a href="{{ .Permalink }}">
+                        <div class="box is-shadowless custom-media">
+                          <article class="media">
+                            <div class="media-left">←</div>
+                            <div class="media-content">
+                              <h1 class="title is-size-5">{{ .Title }}</h1>
+                              <div class="subtitle is-size-6">{{ .Description }}</div>
+                            </div>
+                          </article>
+                        </div>
+                      </a>
+                    {{ end }}
+                  </div>
+                {{ end }}
               {{ end }}
               {{ if .Next }}
-                <div class="column is-full-mobile">
-                  {{ with .Next }}
-                    <a href="{{ .Permalink }}">
-                      <div class="box is-shadowless">
-                        <article class="media">
-                          <div class="media-content">
-                            <h1 class="title is-size-5">{{ .Title | truncate 40 }}</h1>
-                            <div class="subtitle is-size-6">{{ .Description | truncate 40 }}</div>
-                          </div>
-                          <div class="media-right">→</div>
-                        </article>
-                      </div>
-                    </a>
-                  {{ end }}
-                </div>
+                {{ if and (ne .Next.Type "about") (ne .Next.Type "newsletter")  }}
+                  <div class="column is-full-mobile">
+                    {{ with .Next }}
+                      <a href="{{ .Permalink }}">
+                        <div class="box is-shadowless custom-media">
+                          <article class="media">
+                            <div class="media-content">
+                              <h1 class="title is-size-5">{{ .Title }}</h1>
+                              <div class="subtitle is-size-6">{{ .Description }}</div>
+                            </div>
+                            <div class="media-right">→</div>
+                          </article>
+                        </div>
+                      </a>
+                    {{ end }}
+                  </div>
+                {{ end }}
               {{ end }}
             </div>
           </div>
