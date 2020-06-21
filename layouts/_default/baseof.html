@@ -12,7 +12,7 @@
     <meta property="og:url" content="{{ if .IsPage }}https://rajasimon.io{{ .RelPermalink }}{{ else }}https://rajasimon.io{{ end }}">
     <meta property="og:title" content="{{ if .IsPage }}{{ .Page.Title }}{{ else }}Raja Simon — I write all things about Python web{{ end }}">
     <meta property="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
-    <meta property="og:image" content="https://rajasimon.io/images/android-chrome-512x512.png">
+    <meta property="og:image" content="{{ if .Params.Banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}https://rajasimon.io/images/android-chrome-512x512.png{{ end }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
@@ -45,8 +45,8 @@
 
       body {
         font-family: 'Merriweather', serif;
-        font-size: 1.19em;
-        line-height: 1.8;
+        font-size: 1.17em;
+        line-height: 1.7;
         color: #333;
       }
       h1, h2, h3, h4, h5, h6 {
