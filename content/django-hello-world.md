@@ -11,7 +11,7 @@ banner: "content/django-hello-world-banner.png"
 
 Django is huge. It has so many API. Reading the Django docs is like swimming in the ocean. You get lost easily. Trust me, I never thoroughly read the polls tutorial too. Before starting a new Django project, you have to know some basics in Django. And then the rest you can use the search engine to find the answers. I'm here to explain some basics of Django. I think it will help you start a new Django project properly.
 
-# Start
+## Start
 
 I'm not going to explain how to install Django; instead, I'm going to teach you how to start a Django project. If you read the Django documentation, then you know that `startproject` is the command. This command will generate Django project folders and files for the initial project. After that, you can use `runserver` to run the default web server to browse the website.
 
@@ -23,11 +23,11 @@ When you browse you will see the Django landing page. Which you want to replace 
 
 In my previous blog post [django-project-strucutre](/django-project-structure/) I explained how to start a project initially so you can refer that for reference.
 
-# App
+## App
 
 We have to replace our Django default landing page with something `Hello World` in fact that is our final goal. So in order to do that we need to tell the Django to use our view function instead of the default landing one. View functions are usually goes into `apps` but sake of the simplicity in explanation I assume that you already created the apps. But remember you have to mention your created app in `INSTALLED_APP` then only Django will consider that as the Django apps.
 
-# URL
+## URL
 
 Let's create a index url that points to index view function that returns `Hello World` html template to render. Well that sounds like simple approach but you need to be careful in every steps.
 
@@ -45,7 +45,7 @@ urlpatterns = [
 
 If you run the application it will throw an error because we have not created index view functions yet.
 
-# View
+## View
 
 If you create app using `startapp` command then views.py file created automatically for you. Here where you write all of your business logic.
 
@@ -61,7 +61,7 @@ This is very simple view function. In Django every view function takes `request`
 
 Render function will take the request as the first argument and return wherever the HTML file we point to.
 
-# HTML
+## HTML
 
 By default Django will not create any HTML part so you need to create the HTML file. Create `templates` folder in your app and then create two files. One is `base.html`  and another one is `index.html`.
 
