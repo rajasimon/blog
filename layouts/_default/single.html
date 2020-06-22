@@ -26,9 +26,11 @@
               {{ range (.GetTerms "tags") }}
                 <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
               {{ end }}
-              tags. Please support me by subscribing to my <a href="/newsletter">Newsletter</a>.
-              By subscribing you will not miss <strong>future</strong> articles in this category.
+              tags. Please support me by subscribing to my <strong>Newsletter</strong>.
+              By subscribing you will not miss any <strong>future</strong> articles in this category.
             </p>
+            <br>
+            {{ partial "newsletter.html" }}
             <hr>
             <div class="columns is-mobile is-multiline">
               {{ if .Prev }}

@@ -83,5 +83,3 @@ Finally, We can display fetched items in html file like this.
 ```
 
 This is just the for loop in Django template. We can't write Python for loops in HTML file but Django comes with Django template languages that we can use to write for loop and other interesting stuffs.
-
-
