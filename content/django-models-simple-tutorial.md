@@ -2,7 +2,7 @@
 title: "Django Models Simple Tutorial"
 description: "Simple guide to show db records in web page"
 date: 2020-06-22T09:23:28+05:30
-draft: true
+draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
@@ -11,7 +11,7 @@ banner: "content/django-models-simple-tutorial-banner.png"
 
 One of the advantages of Django is ORM. Instead of writing raw SQL to fetch and display values we can use Django ORM. It's simple and easy way to get value from database and then display it in a web page.
 
-In my previous post I've explained how to start a Django project from scratch. Please checkout [Django Hello World](/django-hello-world) if you want to retouch some basics. 
+In my previous post I've explained how to start a Django project from scratch. Please checkout [Django Hello World](/django-hello-world) if you want to retouch some basics.
 
 ### Database Driver
 
@@ -19,7 +19,7 @@ Oh don't get confused with driver word. It's nothing but the bridge between your
 
 ### Database Connect
 
-In this blog I'm going to choose PostgreSQL. And I've to install psycopg2. After installation I need to tell the Django to use my PostgreSQL database. So open `settings.py` file and modify DATABASES value to below snippet. 
+In this blog I'm going to choose PostgreSQL. And I've to install psycopg2. After installation I need to tell the Django to use my PostgreSQL database. So open `settings.py` file and modify DATABASES value to below snippet.
 
 If you don't know how to create PostgreSQL database or How to create psql user or password then please checkout [PostgreSQL cheatsheet](/psql-cheatsheet/)
 
@@ -40,7 +40,7 @@ DATABASES = {
 
 Django comes with ORM and other interesting features that enable rabid development. One is migrations, It can able to create tables. It can able to revert back to the column datatypes and so on. So it's recommended you to stick with this apporach instead of creating table and schema outside of Django.
 
-To create tables you need to open models.py file and create a class function there. Each class function that takes the `models.Model` will converted into database table. 
+To create tables you need to open models.py file and create a class function there. Each class function that takes the `models.Model` will converted into database table.
 
 ```python
 class TestTable(models.Model):
@@ -49,7 +49,7 @@ class TestTable(models.Model):
 
 ### Database Migration
 
-After you entered above code into models.py file then open the terminal and do below shell command. 
+After you entered above code into models.py file then open the terminal and do below shell command.
 
 ```shell
 python manage.py makemigrations
