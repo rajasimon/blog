@@ -3,7 +3,7 @@
     <div class="columns is-mobile is-multiline is-centered">
       {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
       {{ range $paginator.Pages }}
-        <div class="column is-12-mobile is-10-tablet is-10-desktop is-10-widescreen is-8-fullhd">
+        <div class="column is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
           <a href="{{ .RelPermalink }}">
             <article class="media custom-media" style="cursor: pointer;">
               <div class="media-content" style="overflow: hidden">
@@ -34,7 +34,7 @@
       {{ end }}
 
       {{ if gt $paginator.TotalPages 1 }}
-      <div class="column is-12-mobile is-10-tablet is-10-desktop is-10-widescreen is-8-fullhd">
+      <div class="column is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
         <nav class="pagination" role="navigation" aria-label="pagination">
           {{ if $paginator.HasPrev }}
             <a href="{{ $paginator.Prev.URL }}" class="pagination-previous" title="This is the first page">Previous</a>

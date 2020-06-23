@@ -77,7 +77,7 @@ Finally, We can display fetched items in html file like this.
 ```html
 <div>
     {% for item in items %}
-        {{ item }}
+        {{ item.test_text }}
     {% endfor %}
 </div>
 ```
