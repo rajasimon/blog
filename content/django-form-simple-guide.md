@@ -28,7 +28,48 @@ from .models import TestTable
 
 class TestTableForm(ModelForm):
     class Meta:
+        model = TestTable
         fields = "__all__"
 ```
 
-What we just created is ModelForm that connected with Database table. 
+What we just created is ModelForm that connected with Database table. You can tell the class function to use which columns you want in fields. I've used "______all______" because I want to tell the ModelForm to consider all of my fields.
+
+Now that we created model forms now it's time to use it in view function and as well as the html file.
+
+```python
+from .forms import TestTableForm
+
+
+def index(request):
+    form = TestTableForm()
+    return render(request, "index.html", {"forms": form})
+```
+
+I've just created the model form instance in view function and passing it via the index.html via context.
+
+Now in index.html file I can call the the form and that will display the input fields.
+
+```html
+<form action="/your-view-url" method="post">
+  {% csrf_token %}
+  {{ form }}
+  <button type="submit">Submit</button>
+</form>
+```
+
+What we did is using the `form` context we are telling the Django template to convert that into actual form fields and render it.
+
+### Save The User Entered Input
+
+So far our view function will not do anything. We want to tell the view function to save the value whenever user submit the form.
+
+```python
+if request.method == "POST":
+    form = TestTableForm(request.POST)
+    if form.is_valid():
+        form.save()
+    
+    return render(request, "index.html", {"form": form})
+```
+
+I just created the if clause for POST method. This will be executed only when request is POST. Here I'm just creating another form instance but this time I'm passing the `request.POST` as the argument. So Django will take care of passing the incoming request and map the data with the class fields. Finally I'm checking the validation. Once the validation is done I"m calling the `save` method. 
