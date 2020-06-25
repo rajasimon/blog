@@ -2,7 +2,7 @@
 title: "Django How to Login User"
 description: "Django How to Login User"
 date: 2020-06-25T12:35:51+05:30
-draft: true
+draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
