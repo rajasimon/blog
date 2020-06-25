@@ -1,6 +1,6 @@
 ---
 title: "Django How to Login User"
-description: "Django How to Login User"
+description: "Simple guide to authenticate Django User"
 date: 2020-06-25T12:35:51+05:30
 draft: false
 type: "posts"
