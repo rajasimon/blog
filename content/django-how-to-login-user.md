@@ -6,6 +6,7 @@ draft: true
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+banner: "content/django-how-to-login-user.png"
 ---
 You will get to know how to properly authenticate the user. Authentication vital role for any web application. Instead, of implementing your own authentication mechanism, we can use Django Authentication System.
 
@@ -31,12 +32,12 @@ AUTH_USER_MODEL = 'customauth.MyUser'
 Decided which one you want based on your application and follow rest of the guide.
 
 ### Authentication
-Now that your Django user records saved into database. We can authenticate using the `authenticate` method. 
+Now that your Django user records saved into database. We can authenticate using the `authenticate` method.
 ```
 from django.contrib.auth import authenticate
 ```
 
-All we need to do now is call the authenticate method with username and password parameter. This will return `user` object.  
+All we need to do now is call the authenticate method with username and password parameter. This will return `user` object.
 
 ```
 user = authenticate(username='rajasimonio', password='secret')
@@ -53,4 +54,4 @@ if user is not None:
     login(request, user)
 ```
 
-After that we can get the user in request object like `request.user` 
+After that we can get the user in request object like `request.user`
