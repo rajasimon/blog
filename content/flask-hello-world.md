@@ -6,7 +6,6 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["flask"]
-banner: "content/flask-hello-world-banner.png"
 ---
 
 Flask is the Python framework for building web application. It's so pupular because of the simplicity. So simple that it doesn't ship with batteris like ORM. But it has huge collection of third-party libraries. You can use that to create web application without righting lot of codes. Enough of the build up let's see how easy to create web application in Flask.
