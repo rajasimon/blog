@@ -2,7 +2,7 @@
 title: "Introduction to Django Async Views"
 description: "Newly added async views support in Django enables lot of possibilites previously thought it's not possible"
 date: 2020-08-13T17:14:54+05:30
-draft: true
+draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
