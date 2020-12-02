@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Raja Simon"
 
 summaryLength = 40
-paginate = 5
 googleAnalytics = "UA-157573143-2"
 
 [author]
