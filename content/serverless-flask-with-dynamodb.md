@@ -8,16 +8,41 @@ categories: ["development"]
 tags: ["flask"]
 ---
 
-Unlike Django, Flask is not directly tie up with any database. So we can use Flask with either SQL and No-SQL. And that make the Flask framework superior amoung other web frameworks and most suitable for serverless architecture.  In this article I'm going to explain about how to code flask application and database as DynamoDB and deploy to AWS Lambda.
+Unlike Django, Flask is not directly tie-up with any database. So we can use Flask with either SQL and No-SQL. And that makes the Flask framework superior among other web frameworks and most suitable for serverless architecture.  In this article, I'm going to explain how to code the flask application and database as DynamoDB and deploy to AWS Lambda.
 
 ## Introduction
 
-The application architecture will look like this, First I've created the file resources.py where I initiate boto3 client. And I've creatd models.py file that holds all the class reference. And finally I've the JSON file to create the DynamoDB table automatically from script.
+The application architecture will look like this, First I've created the file resources.py where I initiate the boto3 client. And I've created a models.py file that holds all the class references. And finally, I have the JSON file to create the DynamoDB table automatically from the script.
+
+## Table JSON
+
+You can also create the table directly in the AWS console but my local development
+I'm using DynamoDB local instance so I've to reply on other technique to create the
+the table in my local and one of the methods is using the awscli command.
+
+```
+{
+    "TableName": "User",
+    "KeySchema": [{ "AttributeName": "email", "KeyType": "HASH" }],
+    "AttributeDefinitions": [{ "AttributeName": "email", "AttributeType": "S" }],
+    "ProvisionedThroughput": { "ReadCapacityUnits": 5, "WriteCapacityUnits": 5 }
+  }
+```
+
+Once you have the JSON file you can run the below command to create the table.
+
+```
+aws dynamodb create-table --cli-input-json file:////actual_file_path/models/create-user.json --endpoint-url http://localhost:8000
+```
+
+You can remove the `--endpoint-url` if you're creating the table in AWS console.
+
 
 ## Models
 
-Unlike DJango this models reference this model all are the class reference. I've
-also mixed with flask login so that you can create authentication with this code.
+I've created the class reference for each table. One of the benefits of having this  Python object is to deal with DynamoDB response in your template and code.
+
+Also, for authentication purposes, I've used the flask login so that you can create authentication with this code.
 
 ```
 from flask_login import UserMixin
@@ -75,5 +100,10 @@ def get_user(email):
     return None
 ```
 
+you can also create the update_user and delete_user function and use it in your code.
 
+## Conclusion
 
+What we have seen is how to incorporate DynamoDB in our flask based project. First the
+resources and the creation of the table from JSON file and then have the model class based
+python reference and then finally the CRUD operation function.
