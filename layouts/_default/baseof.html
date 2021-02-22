@@ -1,84 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="{{ if .IsPage }}{{ .Page.Title }} - Raja Simon{{ else }}Raja Simon — I write all things about Python web.{{ end }}">
-    <meta name="description" content="{{ if .IsPage }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ if .IsPage }}https://rajasimon.io{{ .RelPermalink }}{{ else }}https://rajasimon.io{{ end }}">
-    <meta property="og:title" content="{{ if .IsPage }}{{ .Page.Title }}{{ else }}Raja Simon — I write all things about Python web{{ end }}">
-    <meta property="og:description" content="{{ if .IsPage }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
-    <meta property="og:image" content="{{ if .Params.Banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}https://rajasimon.io/images/android-chrome-512x512.png{{ end }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="{{ if .Params.Banner }}summary_large_image{{ else }}summary{{ end }}">
-    <meta property="twitter:url" content="{{ if .IsPage }}https://rajasimon.io{{ .RelPermalink }}{{ else }}https://rajasimon.io{{ end }}">
-    <meta property="twitter:title" content="{{ if .IsPage }}{{ .Page.Title }}{{ else }}Raja Simon — I write all things about Python web{{ end }}">
-    <meta property="twitter:description" content="{{ if .IsPage }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
-    <meta property="twitter:image" content="{{ if .Params.Banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}https://rajasimon.io/images/android-chrome-512x512.png{{ end }}">
+  <!-- Primary Meta Tags -->
+  <meta name="title"
+    content="{{ if .IsPage }}{{ .Page.Title }} - Raja Simon{{ else }}Raja Simon — I write all things about Python web.{{ end }}">
+  <meta name="description"
+    content="{{ if .IsPage }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url"
+    content="{{ if .IsPage }}https://rajasimon.io{{ .RelPermalink }}{{ else }}https://rajasimon.io{{ end }}">
+  <meta property="og:title"
+    content="{{ if .IsPage }}{{ .Page.Title }}{{ else }}Raja Simon — I write all things about Python web{{ end }}">
+  <meta property="og:description"
+    content="{{ if .IsPage }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
+  <meta property="og:image"
+    content="{{ if .Params.Banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}https://rajasimon.io/images/android-chrome-512x512.png{{ end }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/site.webmanifest">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="{{ if .Params.Banner }}summary_large_image{{ else }}summary{{ end }}">
+  <meta property="twitter:url"
+    content="{{ if .IsPage }}https://rajasimon.io{{ .RelPermalink }}{{ else }}https://rajasimon.io{{ end }}">
+  <meta property="twitter:title"
+    content="{{ if .IsPage }}{{ .Page.Title }}{{ else }}Raja Simon — I write all things about Python web{{ end }}">
+  <meta property="twitter:description"
+    content="{{ if .IsPage }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}{{ else }}Hi, I'm Raja Simon, a software developer. This is my personal site; I write about Python web application development. Mostly Django and Flask and other web frameworks tutorials.{{ end }}">
+  <meta property="twitter:image"
+    content="{{ if .Params.Banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}https://rajasimon.io/images/android-chrome-512x512.png{{ end }}">
 
-    <title>{{ .Page.Title }}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <!-- Custom css -->
-    <style>
-      body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        background-color: #fefefe;
-        font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
-        font-size: 20px;
-        line-height: 1.7em;
-        font-weight: 400;
-        color: #424242;
-      }
-      #wrapper {
-        flex: 1;
-      }
-      p a {
-        background: linear-gradient(to bottom,#b3e5fc 0%,#b3e5fc 100%);
-        background-position: 0 100%;
-        background-repeat: repeat-x;
-        background-size: 4px 4px;
-        transition: background-size .4s;
-        padding: 3px;
-        border-radius: 4px;
-      }
-      p a:hover {
-        text-decoration: none;
-        color: #01579b;
-        background-size: 4px 50px;
-      }
-      .custom-media {
-        cursor: pointer;
-        padding: 1rem 1rem
-      }
-      .custom-media:hover {
-        background-color: #fcf5f5;
-      }
-    </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
 
-    {{ if not .Site.IsServer }}
-      {{ template "_internal/google_analytics_async.html" . }}
-      {{ if eq .Type "posts" }}
-        <script data-ad-client="ca-pub-7474542029238984" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      {{ end }}
-    {{ end }}
-  </head>
-  <body>
-    <div id="wrapper">
-      {{ partial "navbar" . }}
-      {{ block "main" . }}{{ end }}
-    </div>
-    {{ partial "footer" . }}
-  </body>
+  <title>{{ .Page.Title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <!-- Custom css -->
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background-color: #fefefe;
+      font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+      font-size: 20px;
+      line-height: 1.7em;
+      font-weight: 400;
+      color: #424242;
+    }
+
+    #wrapper {
+      flex: 1;
+    }
+
+    p a {
+      background: linear-gradient(to bottom, #b3e5fc 0%, #b3e5fc 100%);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 4px 4px;
+      transition: background-size .4s;
+      padding: 3px;
+      border-radius: 4px;
+    }
+
+    p a:hover {
+      text-decoration: none;
+      color: #01579b;
+      background-size: 4px 50px;
+    }
+
+    .custom-media {
+      cursor: pointer;
+      padding: 1rem 1rem
+    }
+
+    .custom-media:hover {
+      background-color: #fcf5f5;
+    }
+  </style>
+
+  {{ if not .Site.IsServer }}
+  {{ template "_internal/google_analytics_async.html" . }}
+  {{ if eq .Type "posts" }}
+  <script data-ad-client="ca-pub-7474542029238984" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  {{ end }}
+  {{ end }}
+
+  <script src="https://blogstreak.com/static/auth.js" type="module"></script>
+  <script src="https://blogstreak.com/static/clap.js" type="module"></script>
+</head>
+
+<body>
+  <blogstreak-auth apiKey="FKrFVTJh"></blogstreak-auth>
+  <div id="wrapper">
+    {{ partial "navbar" . }}
+    {{ block "main" . }}{{ end }}
+  </div>
+  {{ partial "footer" . }}
+</body>
+
 </html>
