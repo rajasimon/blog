@@ -1,7 +1,7 @@
 ---
 title: "Joy of writing code in Weekend hack"
 description: "Every Staurday and Sunday I pick one idea and trying to build it for fun."
-date: 2021-07-02T09:00:00+05:30
+date: 2021-03-07T09:00:00+05:30
 draft: false
 type: "posts"
 categories: ["personal"]
