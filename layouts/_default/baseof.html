@@ -84,7 +84,15 @@
   </style>
 
   {{ if not .Site.IsServer }}
-  {{ template "_internal/google_analytics_async.html" . }}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JE44XY5V1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8JE44XY5V1');
+  </script>
   {{ if eq .Type "posts" }}
   <script data-ad-client="ca-pub-7474542029238984" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
