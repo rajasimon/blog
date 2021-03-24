@@ -1,6 +1,8 @@
 {{ define "main" }}
   {{ if eq .Type "about" }}
     {{ partial "about" . }}
+  {{ else if eq .Type "creation" }}
+    {{ partial "creation" .}}
   {{ else if eq .Type "privacy" }}
     {{ partial "privacy" . }}
   {{ else if eq .Type "newsletter" }}
