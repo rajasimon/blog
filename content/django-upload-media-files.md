@@ -1,5 +1,5 @@
 ---
-title: "How to work with uploaded media files in Django"
+title: "Handle uploaded media files in Django"
 description: "Best way to handle user upload files in django forms and views."
 date: 2021-03-27T09:00:00+05:30
 draft: false
@@ -8,7 +8,6 @@ categories: [development]
 type: "posts"
 ---
 
-# How to work with uploaded Media files in Django
 This is process how to handle the user uploaded media files in Django. 
 There is certain way we can process the Django uploaded files. 
 
