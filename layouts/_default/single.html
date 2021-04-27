@@ -1,8 +1,6 @@
 {{ define "main" }}
   {{ if eq .Type "about" }}
     {{ partial "about" . }}
-  {{ else if eq .Type "creation" }}
-    {{ partial "creation" .}}
   {{ else if eq .Type "privacy" }}
     {{ partial "privacy" . }}
   {{ else if eq .Type "newsletter" }}
@@ -29,11 +27,9 @@
               {{ range (.GetTerms "tags") }}
                 <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
               {{ end }}
-              tags. Please support me by subscribing to my <a href="/about">Newsletter</a>.
-              By subscribing you will not miss any <strong>future</strong> articles in this category.
+              tags. Please subscribe below forms to receive <strong>future</strong> articles.
             </p>
             <hr>
-            <blogstreak-reaction apiKey="ZZO98xTG"></blogstreak-reaction>
             <div class="columns is-mobile is-multiline">
               {{ if .Prev }}
                 {{ if and (ne .Prev.Type "about") (ne .Prev.Type "newsletter")  }}
@@ -74,7 +70,7 @@
                 {{ end }}
               {{ end }}
             </div>
-            <blogstreak-subscribe apiKey="ZZO98xTG"></blogstreak-subscribe>
+            {{ partial "newsletter.html" }}
           </div>
         </div>
       </div>
