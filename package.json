@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "A personal blog powered by Hugo.",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1"
+  },
+  "author": "Raja Simon",
+  "license": "ISC"
+}

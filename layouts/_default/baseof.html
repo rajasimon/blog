@@ -38,7 +38,10 @@
   <link rel="manifest" href="/images/site.webmanifest">
 
   <title>{{ .Page.Title }}</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  {{ $css := resources.Get "bulma/bulma.css" }}
+  {{ $css := $css | resources.PostCSS }}
+  {{ $css = $css | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <!-- Custom css -->
   <style>
     body {

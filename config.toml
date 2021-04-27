@@ -5,6 +5,11 @@ title = "Raja Simon"
 summaryLength = 40
 googleAnalytics = "UA-157573143-2"
 
+assetDir = "static"
+
+[build]
+  writeStats = true
+
 [author]
   name = "Raja Simon"
   homepage = "https://rajasimon.io"
@@ -22,6 +27,3 @@ googleAnalytics = "UA-157573143-2"
     javascript = "#ecdb54"
     postgresql = "#336690"
     hugo = "#c9177e"
-
-[markup.goldmark.renderer]
-unsafe= true
