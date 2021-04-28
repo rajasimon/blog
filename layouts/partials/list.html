@@ -16,7 +16,7 @@
                 <div class="is-hidden-desktop">
                   <div class="columns is-mobile">
                     <div class="column">
-                      <p class="subtitle has-text-grey-light">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+                      <p class="subtitle">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
                     </div>
                     <div class="column">
                       {{ partial "dateandtag" . }}
@@ -25,7 +25,7 @@
                 </div>
               </div>
               <div class="media-right is-hidden-touch">
-                <p class="subtitle has-text-grey-light">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+                <p class="subtitle">{{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
                 {{ partial "dateandtag" . }}
               </div>
             </article>

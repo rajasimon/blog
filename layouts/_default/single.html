@@ -11,7 +11,7 @@
         <div class="columns is-mobile is-centered">
           <div class="column is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
             <a href="{{ .URL }}"><h1 class="title is-size-3-mobile is-size-3-tablet is-size-2-desktop is-size-1-widescreen" style="margin-bottom: 0px;">{{ .Title }}</h1></a>
-            <p class="is-size-6 has-text-grey-light">Published {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+            <p class="is-size-6">Published {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
             <br>
             <div class="subtitle">{{ .Description }}</div>
             <hr>
