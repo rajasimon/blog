@@ -41,7 +41,10 @@
   {{ $css := resources.Get "bulma/bulma.css" }}
   {{ $css := $css | resources.PostCSS }}
   {{ $css = $css | minify | fingerprint | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <style type="text/css">
+    {{ $css.Content }}
+  </style>
+  <!-- <link rel="stylesheet" async href="{{ $css.RelPermalink }}"> -->
   <!-- Custom css -->
   <style>
     body {
