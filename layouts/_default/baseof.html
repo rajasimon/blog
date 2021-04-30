@@ -87,6 +87,15 @@
     .custom-media:hover {
       background-color: #fcf5f5;
     }
+
+    p::-moz-selection {
+      color: white;
+      background-color: black;
+    }
+    p::selection {
+      color: white;
+      background-color: black;
+     }
   </style>
 
   {{ if not .Site.IsServer }}
