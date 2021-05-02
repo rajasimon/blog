@@ -1,4 +1,0 @@
----
-type: "creation"
----
-# My SideProjects,

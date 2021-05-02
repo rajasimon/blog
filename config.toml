@@ -1,10 +1,9 @@
 baseURL = "https://rajasimon.io/"
 languageCode = "en-us"
 title = "Raja Simon"
-
 summaryLength = 40
-
 assetDir = "static"
+enableRobotsTXT = true
 
 [build]
   writeStats = true

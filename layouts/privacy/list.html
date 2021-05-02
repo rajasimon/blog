@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
+        <div class="content">
+          {{ .Content }}
+        </div>
+        <p class="mt-4">
+          This article published under
+          {{ range (.GetTerms "categories") }}
+          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+          {{ end }}
+          on
+          {{ range (.GetTerms "tags") }}
+          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+          {{ end }}
+          tags. Please subscribe below forms to receive <strong>future</strong> articles.
+        </p>
+        <hr>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

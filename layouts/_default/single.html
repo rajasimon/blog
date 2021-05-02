@@ -1,79 +1,74 @@
 {{ define "main" }}
-  {{ if eq .Type "about" }}
-    {{ partial "about" . }}
-  {{ else if eq .Type "privacy" }}
-    {{ partial "privacy" . }}
-  {{ else if eq .Type "newsletter" }}
-    {{ partial "newsletter" .}}
-  {{ else }}
-    <section class="section">
-      <div class="container">
-        <div class="columns is-mobile is-centered">
-          <div class="column is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
-            <a href="{{ .URL }}"><h1 class="title is-size-3-mobile is-size-3-tablet is-size-2-desktop is-size-1-widescreen" style="margin-bottom: 0px;">{{ .Title }}</h1></a>
-            <p class="is-size-6">Published {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
-            <br>
-            <div class="subtitle">{{ .Description }}</div>
-            <hr>
-            <div class="content">
-              {{ .Content }}
-            </div>
-            <p class="mt-4">
-              This article published under
-              {{ range (.GetTerms "categories") }}
-               <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-              {{ end }}
-              on
-              {{ range (.GetTerms "tags") }}
-                <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-              {{ end }}
-              tags. Please subscribe below forms to receive <strong>future</strong> articles.
-            </p>
-            <hr>
-            <div class="columns is-mobile is-multiline">
-              {{ if .Prev }}
-                {{ if and (ne .Prev.Type "about") (ne .Prev.Type "newsletter")  }}
-                  <div class="column is-full-mobile">
-                    {{ with .Prev }}
-                      <a href="{{ .Permalink }}">
-                        <div class="box is-shadowless custom-media">
-                          <article class="media">
-                            <div class="media-left">←</div>
-                            <div class="media-content">
-                              <h1 class="title is-size-5">{{ .Title }}</h1>
-                              <div class="subtitle is-size-6">{{ .Description }}</div>
-                            </div>
-                          </article>
-                        </div>
-                      </a>
-                    {{ end }}
-                  </div>
-                {{ end }}
-              {{ end }}
-              {{ if .Next }}
-                {{ if and (ne .Next.Type "about") (ne .Next.Type "newsletter")  }}
-                  <div class="column is-full-mobile">
-                    {{ with .Next }}
-                      <a href="{{ .Permalink }}">
-                        <div class="box is-shadowless custom-media">
-                          <article class="media">
-                            <div class="media-content">
-                              <h1 class="title is-size-5">{{ .Title }}</h1>
-                              <div class="subtitle is-size-6">{{ .Description }}</div>
-                            </div>
-                            <div class="media-right">→</div>
-                          </article>
-                        </div>
-                      </a>
-                    {{ end }}
-                  </div>
-                {{ end }}
-              {{ end }}
-            </div>
-            {{ partial "newsletter.html" }}
-          </div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-12-mobile is-11-tablet is-10-desktop is-9-widescreen is-8-fullhd">
+        <a href="{{ .Permalink }}">
+          <h1 class="title is-size-3-mobile is-size-3-tablet is-size-2-desktop is-size-1-widescreen"
+            style="margin-bottom: 0px;">{{ .Title }}</h1>
+        </a>
+        <p class="is-size-6">Published {{ dateFormat "2 Jan, 2006" (default .Date (.PublishDate)) }}</p>
+        <br>
+        <div class="subtitle">{{ .Description }}</div>
+        <hr>
+        <div class="content">
+          {{ .Content }}
         </div>
+        <p class="mt-4">
+          This article published under
+          {{ range (.GetTerms "categories") }}
+          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+          {{ end }}
+          on
+          {{ range (.GetTerms "tags") }}
+          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+          {{ end }}
+          tags. Please subscribe below forms to receive <strong>future</strong> articles.
+        </p>
+        <hr>
+        <div class="columns is-mobile is-multiline">
+          {{ if .Prev }}
+          {{ if and (ne .Prev.Type "about") (ne .Prev.Type "newsletter") }}
+          <div class="column is-full-mobile">
+            {{ with .Prev }}
+            <a href="{{ .Permalink }}">
+              <div class="box is-shadowless custom-media">
+                <article class="media">
+                  <div class="media-left">←</div>
+                  <div class="media-content">
+                    <h1 class="title is-size-5">{{ .Title }}</h1>
+                    <div class="subtitle is-size-6">{{ .Description }}</div>
+                  </div>
+                </article>
+              </div>
+            </a>
+            {{ end }}
+          </div>
+          {{ end }}
+          {{ end }}
+          {{ if .Next }}
+          {{ if and (ne .Next.Type "about") (ne .Next.Type "newsletter") }}
+          <div class="column is-full-mobile">
+            {{ with .Next }}
+            <a href="{{ .Permalink }}">
+              <div class="box is-shadowless custom-media">
+                <article class="media">
+                  <div class="media-content">
+                    <h1 class="title is-size-5">{{ .Title }}</h1>
+                    <div class="subtitle is-size-6">{{ .Description }}</div>
+                  </div>
+                  <div class="media-right">→</div>
+                </article>
+              </div>
+            </a>
+            {{ end }}
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+        {{ partial "newsletter.html" }}
       </div>
-    </section>
-  {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}
