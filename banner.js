@@ -15,7 +15,7 @@ context.textAlign = 'center'
 context.textBaseline = 'top'
 context.fillStyle = '#000'
 
-const firstLine = 'How to PostCSS'
+const firstLine = 'Fetch failed but Flask'
 
 const firstLineWidth = context.measureText(firstLine).width
 context.fillRect(600 - firstLineWidth / 2 - 10, 170, firstLineWidth + 20, 100)
@@ -25,7 +25,7 @@ context.fillText(firstLine, 600, 170)
 // Reset above white style
 context.fillStyle = '#000'
 
-const secondLine = 'in Hugo'
+const secondLine = 'response is success'
 
 const secondLineWidth = context.measureText(secondLine).width
 context.fillRect(600 - secondLineWidth / 2 - 10, 290, secondLineWidth + 20, 100)

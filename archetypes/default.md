@@ -4,8 +4,8 @@ description: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 type: "posts"
-categories: []
+categories: ["development"]
 tags: []
-banner: "content/{{ .Name }}-banner.png"
+banner: "blog/{{ .Name }}/banner.png"
 ---
 
