@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["personal"]
 tags: ["life"]
+aliases: ["/joy-of-writing-code/"]
 ---
 # Joy of writing code in weekend hack
 Weekend hack is my kinda thing. Every Saturday and Sunday I write code that I like most. It’s one of the feeling that I get excited about the weekend. Although time may not work like every weekend but I sometimes continue the project that I left in last weekend. 

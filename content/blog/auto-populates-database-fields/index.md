@@ -6,6 +6,7 @@ description: "Easy way to create N number of records."
 type: "posts"
 tags: [sql]
 categories: [package]
+aliases: [/auto-populates-database-fields/]
 ---
 
 Few years back I've created many open source projects and we have seen the successfull one beatserer in my previous blog although there is another repository lying in Github and I really really thought it was cool so here I'm telling you all about that hoping you will like it.

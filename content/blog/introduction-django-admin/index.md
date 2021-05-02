@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["django"]
 banner: "content/introduction-django-admin-banner.png"
+aliases: ["/introduction-django-admin/"]
 ---
 
 Let's talk about Django Admin? Django Admin is nothing but the interface provided by Django. It comes with default when you install the Django package using pip. It's automatically added into `INSTALLED_APPS` by Django when you generate the Django project using `startproject`.

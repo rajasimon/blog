@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["postgresql"]
+aliases: ["/psql-cheatsheet/"]
 ---
 
 Listing general PostgreSQL commands here for my future self.

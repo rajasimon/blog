@@ -6,6 +6,7 @@ draft: false
 tags: [django]
 categories: [development]
 type: "posts"
+aliases: ["/django-upload-media-files/"]
 ---
 
 This is process how to handle the user uploaded media files in Django. 

@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["django"]
 banner: "content/django-form-simple-guide-banner.png"
+aliases: ["/django-form-simple-guide/"]
 ---
 
 This guide is to understand what is Django Forms and How we can use it in our application. One of the advantages of Forms is validation. Since Django more of a server rendering application. It's time consuming to add form validation on the frontend. Instead, we can add Django Forms validation that will take care of Email, Integer and other validations on entered input.

@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["hugo"]
 banner: "content/hugo-colour-tags-banner.png"
+aliases: ["/hugo-colour-tags/"]
 ---
 
 Glad that I've chosen Hugo for blogging. It's one of the best static site generator. If you want me to describe Hugo in two words, then it's simple and impressive. Hugo using GO language and their templating method seems boring from the beginner's perspective, but it's suitable for all use cases. 

@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 tags: [django]
 categories: [development]
+aliases: ["/django-multi-page-application/"]
 ---
 
 We all know about single-page applications, but what is this multi-page application and how that is different from monolith architecture. And does we call serverless architecture a multi-page application?. In this post, we are going to see what it is and what are the benefit of using it. So without further due, let’s, deep dive.

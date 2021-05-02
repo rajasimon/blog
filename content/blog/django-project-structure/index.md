@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 tags: [django]
 categories: [development]
+aliases: ["/django-project-structure/"]
 ---
 
 In this blog post you'll learn how to create best folder structure for your Django project.  Django folder structure is consist of project root and apps. If you are not creating the right folder structure then everything will look complex.

@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-one-to-one-exists/"]
 ---
 When working with Django ORM we often encounter the problem with whether the object exist or not. For example in One-To-One relationship there is no API to check if objects exist in object.
 

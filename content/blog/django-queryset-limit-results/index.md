@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-queryset-limit-results/"]
 ---
 When we do queryset.all() it will return all the objects in the database. But in some case we need to limit the results. Let’s see how we can limit the results. 
 

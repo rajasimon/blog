@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["hugo"]
+aliases: ["/hugo-adsense-ads-txt/"]
 ---
 You are here because you just got approved by Adsense and you want to place ads.txt in your blog. But, you don’t know where to begin. I’ve the simple solution for you to serve ads.txt from your hugo blog. 
 

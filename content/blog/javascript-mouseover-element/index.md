@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["javascript"]
+aliases: ["/javascript-mouseover-element/"]
 ---
 
 How to properly add mouseover functionality in javascript. You can add `onmouseover` keyword argument in the element. 

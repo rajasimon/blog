@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["python"]
+aliases: ["/include-curly-bracket-in-python-string/"]
 ---
 
 # How to include curly bracket in Python string output?

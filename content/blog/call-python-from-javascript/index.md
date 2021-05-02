@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["javascript"]
+aliases: ["/call-python-from-javascript/"]
 ---
 These days website is powered by Javascript. Frameworks like React allows one to create a single page application very easily. But javascript ability stops in browser. Beyond that you don’t have any control over that. To run scripts in the backend you need to follow certain methods. These methods defined by backend frameworks. But in the javascript side you just need to make the API call to the backend. Let’s see how that can be done. 
 

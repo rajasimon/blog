@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 tags: [django]
 categories: [development]
+aliases: ["/django-channels-background-task/"]
 ---
 
 This post explains how to run Django background task with Django Channels. I've created the `beatserver` python package for those who wanted to run background task inside the Django server without using external dependencies. Well, Channel itself another dependency but soon it will merge in to Django so I say now you need just Channels as the first dependecies.

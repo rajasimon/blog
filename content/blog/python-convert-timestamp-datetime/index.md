@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 tags: ["python"]
 categories: ["development"]
+aliases: ["/python-convert-timestamp-datetime/"]
 ---
 
 Timestamp is really helpful in API usage. You can send timestamp down the wire so that your client can decode it in their favourite language. For example I've the date object something like this `datetime.datetime(2020, 5, 7, 12, 35, 36, 492168)` but the frontend (Js) is really hard to parse the value so if you send the timestamp then you can convert into datetime object easily.

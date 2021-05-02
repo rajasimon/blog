@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-q-object/"]
 ---
 
 Django uses Object Relational Mapper for the querying database. It's good for most cases, but sometimes, you need to run more complex queries. For that, the Django ORM ship with `Q` objects and it can construct more complex database queries.

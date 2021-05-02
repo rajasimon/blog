@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: [development]
 tags: [javascript]
+aliases: ["/javascript-current-target/"]
 ---
 
 If you’re reading this then chances are you’re working on the onclick event handler. This will return the event where it’s clicked instead of the parent element. If that’s the case then you’re in the right place. I’m going to explain how do we get the target element instead of where it’s clicked.

@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["personal"]
 tags: ["life"]
+aliases: ["/why-not-working-side-project/"]
 ---
 
 Yes I'm not working on my side project. You many know that I've publicly announced my side project in betalist and I got good decent amount of users signup for the service and waiting for the trial now I've to create the project otherwise those users not gonna get it. In other words I will be wasting the potential users who signed up for the service. 

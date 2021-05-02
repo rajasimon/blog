@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["blogging"]
 tags: ["blog"]
+aliases: ["/how-to-make-money-with-blogging/"]
 ---
 
 This article comes from my own experience. I started writing recently and been publishing content over the past few weeks. And I have made a decent amount of money from it. I know it's not that big enough to convince you to start a blog, but what I'm about to tell you is a proven method. It's working for me, and it will work for you too. Let's get started with these tips for making a successful blog that generates a revenue stream for you.

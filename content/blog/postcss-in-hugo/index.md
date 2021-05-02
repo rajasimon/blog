@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["hugo"]
 banner: "content/postcss-in-hugo-banner.png"
+aliases: ["/postcss-in-hugo/"]
 ---
 
 This blog website you are reading is powered by Hugo. Hugo is one of the best static site framework out there. It’s boring because there is a steep learning curve is there to learn all the things Hugo offer. But most of the time it’s simple enough for a beginner who just started blogging. Also, it’s powerful enough for most of the customization you need for a very big blog site. 

@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-compare-uuid-with-string/"]
 ---
 
 ### Introduction

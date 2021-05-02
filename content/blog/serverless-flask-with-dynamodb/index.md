@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["flask"]
+aliases: ["/serverless-flask-with-dynamodb/"]
 ---
 
 Unlike Django, Flask is not directly tie-up with any database. So we can use Flask with either SQL and No-SQL. And that makes the Flask framework superior among other web frameworks and most suitable for serverless architecture.  In this article, I'm going to explain how to code the flask application and database as DynamoDB and deploy to AWS Lambda.

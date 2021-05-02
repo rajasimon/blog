@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-include-url-from-app/"]
 ---
 This article explains three way to configure `include` in urls.py file. 
 

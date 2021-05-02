@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-generate-unique-id/"]
 ---
 When comes to unique key in database table we have to use auto generated key. But in some cases we need to use custom generated key. The places like in url or any other external facing application. One of the best way to generate unique key is with UUID.
 

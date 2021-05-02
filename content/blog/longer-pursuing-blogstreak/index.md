@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["personal"]
 tags: ["life"]
+aliases: ["/longer-pursuing-blogstreak/"]
 ---
 
 I got frustrated with the project development. It’s because of that I can’t do it but it’s like the project itself very simple to develop but I want the secure and most easy way and there is no one. 

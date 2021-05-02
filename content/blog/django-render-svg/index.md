@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-render-svg/"]
 ---
 To display SVG in HTML file normally we place the SVG code inside the HTML file. And that works almost no issues. But in some cases you need to serve the SVG from Django. This is useful where you can change the SVG over static without modifying the HTML file. Also dynamic SVG rendering is possible with this approach.
 

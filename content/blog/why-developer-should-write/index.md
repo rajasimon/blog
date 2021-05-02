@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["writing"]
+aliases: ["/why-developer-should-write/"]
 ---
 
 Developer should know about how to write. It’s fundamental communication tool that every developer should master about. Although It’s apply to all the technology but in the development  area this will communicate your thoughts in the code to other developers.

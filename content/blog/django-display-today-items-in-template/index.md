@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-display-today-items-in-template/"]
 ---
 There is a situation where I need to compare dates with a querysets variable in a Django template. For example, I want to list all of the database values stored in a database. There are plenty of ways we can do this operation, but I'm looking for a template method instead of writing it on the backend.
 

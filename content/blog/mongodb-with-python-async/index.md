@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 tags: [starlette]
 categories: [development]
+aliases: ["/mongodb-with-python-async/"]
 ---
 
 # How to use mongoDB with Python Async?

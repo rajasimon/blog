@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["django"]
 banner: "content/django-how-to-login-user.png"
+aliases: ["/django-how-to-login-user/"]
 ---
 You will get to know how to properly authenticate the user. Authentication vital role for any web application. Instead, of implementing your own authentication mechanism, we can use Django Authentication System.
 

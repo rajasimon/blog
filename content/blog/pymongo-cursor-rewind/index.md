@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: [development]
 tags: [pymongo]
+aliases: ["/pymongo-cursor-rewind/"]
 ---
 I was doing the some coding in Python with PyMongo. Task is to get the collection of documents from mongoDB and perform different operation on the fetched documents.
 

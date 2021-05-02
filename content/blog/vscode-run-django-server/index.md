@@ -6,6 +6,7 @@ draft: true
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/vscode-run-django-server/"]
 ---
 One of the advantages of using Visual Studio Code is debugger. Instead of using run server in terminal and use pdb to debug we can use vscode default debugger. Activating the debugger is very easy just follow these steps. 
 

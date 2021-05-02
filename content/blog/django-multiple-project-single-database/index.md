@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/django-multiple-project-single-database/"]
 ---
 
 How do we go with connecting single database for multiple Django project. I've this situation where I need to connect same database but different server. For example we have old Django project and instead of updating the project to new we decided to create a micro service architecture and migrate the apps one by one. But have to use the same database for authorization purpose. Anyhow, we created the application in latest Django framework and everything is ready but the annoying migration error message keep appear everytime we do runserver.

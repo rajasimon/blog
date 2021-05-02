@@ -5,8 +5,8 @@ summaryLength = 40
 assetDir = "static"
 enableRobotsTXT = true
 
-[sitemap]
-    changefreq = "daily"
+[permalinks]
+  "/" = "/:filename/"
 
 [build]
   writeStats = true

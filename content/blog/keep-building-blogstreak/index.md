@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["personal"]
 tags: ["life"]
+aliases: ["/keep-building-blogstreak/"]
 ---
 
 

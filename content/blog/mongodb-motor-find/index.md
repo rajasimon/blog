@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: [development]
 tags: [motor]
+aliases: ["/mongodb-motor-find/"]
 ---
 
 MongoDB keep amaze me about performance. Everytime I tries to do some heavy operation it returns the result immediately. Right now I'm going to explain how to use the `find` operation in MongoDB with Motor.

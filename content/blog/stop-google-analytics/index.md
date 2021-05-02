@@ -5,6 +5,7 @@ date: 2020-02-11T17:25:35+05:30
 draft: false
 tags: ["google"]
 categories: ["analytics"]
+aliases: ["/stop-google-analytics/"]
 ---
 
 For every project that I’ve set up Google Analytics, I wish Google automatically detects when I’m in local development and completely turn off analytics. For some environment, you can’t exclude the local environment just by using IP and ISP. You just need some solid way to detect you’re in the local environment.

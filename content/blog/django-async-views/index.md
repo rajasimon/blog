@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["django"]
 banner: "content/django-async-views-banner.png"
+aliases: [/django-async-views/]
 ---
 
 Finally, Asynchoronus views come into Django with 3.1 release. It's a long-awaited request from Django developers, and it's here. Let's discuss how we can use that to build async views.

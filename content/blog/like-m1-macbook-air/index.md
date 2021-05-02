@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["personal"]
 tags: ["life"]
+aliases: ["/like-m1-macbook-air/"]
 ---
 
 # What I like about the new M1 MacBook Air

@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["django"]
 banner: "content/django-hello-world-banner.png"
+aliases: ["/django-hello-world/"]
 ---
 
 Django is huge. It has so many API. Reading the Django docs is like swimming in the ocean. You get lost easily. Trust me, I never thoroughly read the polls tutorial too. Before starting a new Django project, you have to know some basics in Django. And then the rest you can use the search engine to find the answers. I'm here to explain some basics of Django. I think it will help you start a new Django project properly.

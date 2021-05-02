@@ -7,6 +7,7 @@ type: "posts"
 categories: ["development"]
 tags: ["django"]
 banner: "content/django-models-simple-tutorial-banner.png"
+aliases: ["/django-models-simple-tutorial/"]
 ---
 
 One of the advantages of Django is ORM. Instead of writing raw SQL to fetch and display values we can use Django ORM. It's simple and easy way to get value from database and then display it in a web page.

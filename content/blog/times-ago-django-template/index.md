@@ -6,6 +6,7 @@ draft: false
 type: "posts"
 categories: ["development"]
 tags: ["django"]
+aliases: ["/times-ago-django-template/"]
 ---
 
 I've database table that uses `created` field. And in frontend I need to display created `times ago `. Here is code example of what I wanted to achieve.
