@@ -171,6 +171,8 @@
       "database-migration",
       "delete-linkedin-from-your-picture",
       "django-user",
+      "docker-composeyml",
+      "dockerfile",
       "example-of-async-views",
       "explanation",
       "final-thoughts",
