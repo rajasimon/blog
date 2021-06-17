@@ -60,3 +60,9 @@ services:
     depends_on:
       - db
 ```
+
+And finally you can use with docker command like this. 
+
+```
+docker compose build
+docker compose up
